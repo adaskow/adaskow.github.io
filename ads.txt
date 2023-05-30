@@ -13,4 +13,4 @@ uis.mobfox.com, 1858, RESELLER, 5529a3d1f59865be
 loopme.com, 11446,RESELLER,6c8d5f95897a5a3b
 smartyads.com, 10, RESELLER, fd2bde0ff2e62c5d
 adswizz.com, adtonos, RESELLER
-rubiconproject.com, 18851, RESELLER, cokolwiek
+rubiconprojects.com, 25318, RESELLER, cokolwiek
