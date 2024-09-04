@@ -9,5 +9,24 @@
   <body>
     <script async defer src="https://staging-play.adtonos.com/attc-7NMxixdJMSXWv7BdT.min.js"></script>
     <h1>AdTonos</h1>
+    <button id="sendRequestButton">Send Request</button>
+
+    <script>
+        document.getElementById('sendRequestButton').addEventListener('click', function() {
+            fetch('/xml/CxDsKPo5FHuuFWMM8/vast.xml?device=mobile&Cookie=ulid=01GRC4PFQ4S8390F14GFM5HSMC', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
   </body>
 </html>
