@@ -13,13 +13,21 @@
 
     <script>
         document.getElementById('sendRequestButton').addEventListener('click', function() {
-            fetch('/xml/CxDsKPo5FHuuFWMM8/vast.xml?device=mobile&Cookie=ulid=01GRC4PFQ4S8390F14GFM5HSMC', {
+            fetch('https://vast-adapter.staging.adtonos.com/xml/CxDsKPo5FHuuFWMM8/vast.xml?device=mobile&Cookie=ulid=01GRC4PFQ4S8390F14GFM5HSMC', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
                 }
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                if (!response.headers.get('content-type').includes('application/json')) {
+                    throw new Error('Response is not JSON');
+                }
+                return response.json();
+            })
             .then(data => {
                 console.log('Success:', data);
             })
