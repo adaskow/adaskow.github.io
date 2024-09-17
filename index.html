@@ -15,6 +15,7 @@
         document.getElementById('sendRequestButton').addEventListener('click', function() {
             fetch('https://vast-adapter.staging.adtonos.com/xml/CxDsKPo5FHuuFWMM8/vast.xml?device=mobile', {
                 method: 'GET',
+                credentials: 'include',
                 headers: {
                     'Content-Type': 'application/json'
                 }
