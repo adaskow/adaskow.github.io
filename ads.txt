@@ -20,4 +20,4 @@ smartyads.com, 10, RESELLER, fd2bde0ff2e62c5d
 adswizz.com, adtonos, RESELLER
 rubiconproject.com, 25318, RESELLER, 0bfd66d529a55807
 smartyads.com, 100251, RESELLER, fd2bde0ff2e62c5d
-zetaglobal.net 546 RESELLER
+zetaglobal.net, 546, RESELLER
