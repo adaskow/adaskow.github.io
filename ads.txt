@@ -24,4 +24,5 @@ smartyads.com, 100251, RESELLER, fd2bde0ff2e62c5d
 zetaglobal.net, 546, RESELLER
 PilotX.tv, 4468, DIRECT, 77f6f7d81cd87ce7
 pilotX.tv, 4468, DIRECT, 77f6f7d81cd87ce7
-data-fusion.io, 4468, DIRECT 
+data-fusion.io, 4468, DIRECT
+media.net, 8CUV883SI, RESELLER
